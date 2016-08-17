@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHRAVAN MURALI</title>
+	<link href="images/icon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width , height=device-height , maximum-scale=1.4  , initial-scale=1.0 , user-scalable=yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="author" content="Shravan Murali" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.scss">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/font-awesome/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron|Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function sr() {
+    $('#fullpage').fullpage({
+    	 anchors:['intro_page', 'page2'],
+    	  menu:"#main_nav",
+    	  css3:true,
+    	 scrollingSpeed: 1000,
+    	 afterLoad:scroll_reveal(),
+    	 scrollBar:true
+    });
+}
+		$(document).ready(sr);
+	</script>
+</head>
+<body>
+
+<nav id="main_nav" class="navbar navbar-fixed-top">
+	<ul id="menu" class="visible-lg visible-md visible-sm">
+	<li data-menuanchor="intro_page" class="active waves-effect waves-light" style="margin-left: 1%;">
+		<a href="#intro_page">Introduction</a>
+	</li>
+	<li data-menuanchor="page2" class="active waves-effect waves-light">
+		<a href="#page2">Details</a>
+	</li>
+	<!-- <li data-menuanchor="projects">
+		<a href="#projects">Projects</a>
+	</li> -->
+	
+</ul>
+<div id="ham">
+	<img src="images/alt.png" style="position:relative;height:100%;">
+</div>
+<ul id="mobile_menu" >
+<li>
+	<a href="#intro_page">Introduction</a>
+</li>
+<li>
+	<a href="#page2">Details</a>
+</li>
+<!-- <li>
+	<a href="#projects">Projects</a>
+</li> --> 
+</ul>
+
+</nav>
+<div id="fullpage">
+<div class="section" data-anchor="intro_page" id="intro">
+<div class="text-center" id="name">
+	SHRAVAN MURALI
+	<br/>
+	<img id="self" src="images/self.jpg">
+</div>
+<div id="quote" class="col-lg-4 col-md-4 col-sm-7 col-xs-7">
+	<span style="font-weight:bolder;">SHRAVAN</span> IS MY NAME AND PROGRAMMING IS MY GAME
+</div>
+</div>
+<div class="section" data-anchor="page2">
+	<div class="text-center">
+	<h1 style="font-family:'Orbitron';">SOCIAL MEDIA</h1>
+	<ul id="icons" style="list-style-type:none;">
+		<li><a target="_blank" href="https://facebook.com/shravan97"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a></li>
+		&nbsp;
+		<li><a target="_blank" href="https://twitter.com/shrvn97"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
+
+		&nbsp;
+		<li><a target="_blank" href="https://linkedin.com/shravan97"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a></li>
+
+	</ul>
+	<h1 style="font-family:'Orbitron';">PROGRAMMING</h1>
+	<ul id="icons" style="list-style-type:none;">
+		<li><a target="_blank" href="https://github.com/shravan97"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a></li>
+		&nbsp;
+		<li><a target="_blank" href="https://kaggle.com/shrvn97"><img src="images/kaggle.png"></a></li>
+		&nbsp;
+		<li><a target="_blank" href="https://codeforces.com/profile/shravan97"><img src="images/codeforces.png"></a></li>
+
+	</ul>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

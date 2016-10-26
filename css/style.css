@@ -14,28 +14,31 @@
 #menu > li
 {
     display: inline-block;
-    padding: 1.2%;
     border-radius: 4px;
     font-family: 'Josefin Sans';
-    font-weight: bold;
-    font-size: 130%;
+    font-weight: bolder;
 }
 #menu > li > a:hover
 {
     text-decoration: none;
     color: white;
 }
+#menu > li > a
+{
+	color: #039be5;
+	font-size: 120%;
+}
 
 li.active
 {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.7) !important;
 
 }
 
 #main_nav
 {
-	background-color: #E6E5E5;
-	box-shadow: 0px 5px 7px black;
+	height: 59px;
+	background-color:transparent; 
 }
 #quote
 {
@@ -51,7 +54,7 @@ li.active
 #intro
 {
 	background-color: gray;
-	background: url('../images/space_fly.gif');
+	background: url('../images/background2.jpg');
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -69,8 +72,7 @@ li.active
 #menu
 {
     float: right;
-    box-shadow:7px 5px 10px black; 
-    background-color: #E2E8E8;
+    background:linear-gradient(to top,rgba(0,0,0,0.6),rgba(255,255,255,0.7));
     width: 100%;
     margin-bottom: 0px;
 }

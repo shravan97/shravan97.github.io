@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no">
+	<title>Synergy'18</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="static/font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="static/js/particles.js"></script>
+	<script type="text/javascript" src="static/js/modernizr.js"></script>
+	<script type="text/javascript" src="static/js/navbar.js"></script>
+	<script type="text/javascript" src="static/js/jquery.lettering.js"></script>
+	<script type="text/javascript" src="static/js/jquery.textillate.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script type="text/javascript">
+		particlesJS.load('particles-js', 'static/configs/particles.json', function() {
+  
+  console.log('callback - particles.js config loaded');
+
+});
+	</script>
+</head>
+<body style="height: 100vh;">
+	<!--<header class="cd-header">-->
+		<!--<a href="#0" class="cd-3d-nav-trigger" style="background-color:#343c55;">-->
+			<!--Menu-->
+			<!--<span></span>-->
+		<!--</a>-->
+	<!--</header> &lt;!&ndash; .cd-header &ndash;&gt;-->
+
+<div id="particles-js" style="height: 100%;"></div>
+	<!--<nav class="cd-3d-nav-container">-->
+		<!--<ul class="cd-3d-nav">-->
+			<!--<li class="cd-selected">-->
+				<!--<a href="#0">Dashboard</a>-->
+			<!--</li>-->
+
+			<!--<li>-->
+				<!--<a href="#0">Projects</a>-->
+			<!--</li>-->
+
+			<!--<li>-->
+				<!--<a href="#0">Images</a>-->
+			<!--</li>-->
+
+			<!--<li>-->
+				<!--<a href="#0">Settings</a>-->
+			<!--</li>-->
+
+			<!--<li>-->
+				<!--<a href="#0">New</a>-->
+			<!--</li>-->
+		<!--</ul> &lt;!&ndash; .cd-3d-nav &ndash;&gt;-->
+
+		<!--<span class="cd-marker color-1"></span>	-->
+	<!--</nav> &lt;!&ndash; .cd-3d-nav-container &ndash;&gt;-->
+	<div class="text-center main-text">
+		<span class="tlt">Synergy &#39;18</span>
+		<br>
+		<span class="tlt1">coming soon</span>
+		<br>
+		<div class="social">
+			<a href="facebook.com"><i class="fa fa-facebook fa-3" aria-hidden="true"></i></a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="twitter.com"><i class="fa fa-twitter fa-3" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+window.sr = ScrollReveal();
+sr.reveal('.social', {delay: 2600});
+	$('.tlt').textillate({
+  // the default selector to use when detecting multiple texts to animate
+  selector: '.texts',
+
+  // enable looping
+  loop: false,
+
+  // sets the minimum display time for each text before it is replaced
+  minDisplayTime: 5000,
+
+  // sets the initial delay before starting the animation
+  // (note that depending on the in effect you may need to manually apply
+  // visibility: hidden to the element before running this plugin)
+  initialDelay: 0,
+
+  // set whether or not to automatically start animating
+  autoStart: true,
+
+  // custom set of 'in' effects. This effects whether or not the
+  // character is shown/hidden before or after an animation
+  inEffects: [],
+
+  // custom set of 'out' effects
+  outEffects: [ 'hinge' ],
+
+  // in animation settings
+  in: {
+  	// set the effect name
+    effect: 'fadeInLeftBig',
+
+    // set the delay factor applied to each consecutive character
+    delayScale: 1.5,
+
+    // set the delay between each character
+    delay: 50,
+
+    // set to true to animate all the characters at the same time
+    sync: false,
+
+    // randomize the character sequence
+    // (note that shuffle doesn't make sense with sync = true)
+    shuffle: false,
+
+    // reverse the character sequence
+    // (note that reverse doesn't make sense with sync = true)
+    reverse: false,
+
+    // callback that executes once the animation has finished
+    callback: function () {}
+  },
+
+  // out animation settings.
+  out: {
+    effect: 'hinge',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: false,
+    reverse: false,
+    callback: function () {}
+  },
+
+  // callback that executes once textillate has finished
+  callback: function () {},
+
+  // set the type of token to animate (available types: 'char' and 'word')
+  type: 'char'
+});
+
+	$('.tlt1').textillate({
+  // the default selector to use when detecting multiple texts to animate
+  selector: '.texts',
+
+  // enable looping
+  loop: false,
+
+  // sets the minimum display time for each text before it is replaced
+  minDisplayTime: 5000,
+
+  // sets the initial delay before starting the animation
+  // (note that depending on the in effect you may need to manually apply
+  // visibility: hidden to the element before running this plugin)
+  initialDelay: 600,
+
+  // set whether or not to automatically start animating
+  autoStart: true,
+
+  // custom set of 'in' effects. This effects whether or not the
+  // character is shown/hidden before or after an animation
+  inEffects: [],
+
+  // custom set of 'out' effects
+  outEffects: [ 'hinge' ],
+
+  // in animation settings
+  in: {
+  	// set the effect name
+    effect: 'fadeInLeftBig',
+
+    // set the delay factor applied to each consecutive character
+    delayScale: 1.5,
+
+    // set the delay between each character
+    delay: 100,
+
+    // set to true to animate all the characters at the same time
+    sync: false,
+
+    // randomize the character sequence
+    // (note that shuffle doesn't make sense with sync = true)
+    shuffle: false,
+
+    // reverse the character sequence
+    // (note that reverse doesn't make sense with sync = true)
+    reverse: false,
+
+    // callback that executes once the animation has finished
+    callback: function () {}
+  },
+
+  // out animation settings.
+  out: {
+    effect: 'hinge',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: false,
+    reverse: false,
+    callback: function () {}
+  },
+
+  // callback that executes once textillate has finished
+  callback: function () {},
+
+  // set the type of token to animate (available types: 'char' and 'word')
+  type: 'char'
+});
+
+// var r=0,g=0,b=79;
+// setInterval(
+// 	function(){
+// 		var color = String(r)+', '+String(g)+', '+String(b);
+// 		$('#main-text').css('box-shadow', '0 10px 10px 0 rgb('+color+')');
+// 		console.log(" here colors : ",r,g,b);
+// 		r = (r+1)%255;
+// 		b = (b+1)%255;
+		
+// 	}, 50);
+</script>
+</html>

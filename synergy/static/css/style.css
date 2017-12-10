@@ -403,7 +403,7 @@ Main Components
        box-shadow: 4px 10px 10px 15px #6a1b9a;
     } 
     100% {
-       box-shadow: 4px 10px 10px 15px #bbdefb
+       box-shadow: 4px 10px 10px 15px #bbdefb;
     } 
  }
 
@@ -422,6 +422,25 @@ Main Components
   
 }
 
+div.clock {
+  font-family: 'Fredericka the Great';
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  top:1%;
+  /*width: 65vw;*/
+  left: 23vw;
+  /*height: 5vw;*/
+}
+
+.flip-clock-label {
+  font-size: 40px;
+}
+
+div.social {
+  padding-top: 40px;
+}
+
 /*.main-text span {
   transform: translate(0, 30%);
 }
@@ -430,6 +449,7 @@ Main Components
   transform: translate(0, 80%);
 }
 */
+
 .main-text div a {
   color: white;
 }

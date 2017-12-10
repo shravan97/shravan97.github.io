@@ -11,11 +11,12 @@
 	<script type="text/javascript" src="static/js/jquery.min.js"></script>
 	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="static/js/particles.js"></script>
-	<script type="text/javascript" src="static/js/modernizr.js"></script>
-	<script type="text/javascript" src="static/js/navbar.js"></script>
+	<!-- <script type="text/javascript" src="static/js/modernizr.js"></script> -->
+	<!-- <script type="text/javascript" src="static/js/navbar.js"></script> -->
 	<script type="text/javascript" src="static/js/jquery.lettering.js"></script>
 	<script type="text/javascript" src="static/js/jquery.textillate.js"></script>
-	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="static/js/timer/jquery.countdown.min.js"></script>
+	<script src="static/js/scrollreveal.min.js"></script>
 	<script type="text/javascript">
 		particlesJS.load('particles-js', 'static/configs/particles.json', function() {
   
@@ -58,15 +59,40 @@
 
 		<!--<span class="cd-marker color-1"></span>	-->
 	<!--</nav> &lt;!&ndash; .cd-3d-nav-container &ndash;&gt;-->
-	<div class="text-center main-text">
-		<span class="tlt">Synergy &#39;18</span>
+  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Clock</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="height: 300px;">
+        <div class="clock" style="color: black; left: 21%;"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="clock hidden-xs hidden-sm" id="desktop-clock"></div>
+  <div class="text-center main-text">
+    <button type="button" class="btn btn-primary visible-xs visible-sm" data-toggle="modal" data-target="#Modal" style="margin:0 auto;background-color: #1b1f23;border-color: white;">
+    Clock
+    </button>
+    <span class="tlt">Synergy &#39;18</span>
 		<br>
 		<span class="tlt1">coming soon</span>
 		<br>
 		<div class="social">
-			<a href="facebook.com"><i class="fa fa-facebook fa-3" aria-hidden="true"></i></a>
-			&nbsp;&nbsp;&nbsp;
-			<a href="twitter.com"><i class="fa fa-twitter fa-3" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/synergynitt/" target="_blank"><i class="fa fa-facebook fa-3" aria-hidden="true"></i></a>
+			
+			<a href="https://twitter.com/synergynitt" target="_blank"><i class="fa fa-twitter fa-3" aria-hidden="true"></i></a>
+      
+      <a href="https://www.instagram.com/synergynitt/" target="_blank"><i class="fa fa-instagram fa-3" aria-hidden="true"></i></a>
 		</div>
 	</div>
 
@@ -74,6 +100,70 @@
 <script type="text/javascript">
 window.sr = ScrollReveal();
 sr.reveal('.social', {delay: 2600});
+var start = new Date(2018, 1, 16);
+
+// var clock = $('.clock').FlipClock(start, {
+//     clockFace: 'DailyCounter',
+//     countdown: true,
+
+//   });
+var clock_disp;
+
+  if($(window).outerWidth() > 991 )
+  {
+    clock_disp = ''
+    + '<span>%w</span> weeks '
+    + '<span>%d</span> days '
+    + '<span>%H</span> hr '
+    + '<span>%M</span> min '
+    + '<span>%S</span> sec';
+  }
+  else
+  {
+    clock_disp = ''
+    + '<span>%w</span> weeks <br>'
+    + '<span>%d</span> days <br>'
+    + '<span>%H</span> hr <br>'
+    + '<span>%M</span> min <br>'
+    + '<span>%S</span> sec <br>';
+  }
+
+
+$(window).resize(function(){
+  if($(window).outerWidth() > 991 )
+  {
+    clock_disp = ''
+    + '<span>%w</span> weeks '
+    + '<span>%d</span> days '
+    + '<span>%H</span> hr '
+    + '<span>%M</span> min '
+    + '<span>%S</span> sec';
+  }
+  else
+  {
+    clock_disp = ''
+    + '<span>%w</span> weeks <br>'
+    + '<span>%d</span> days <br>'
+    + '<span>%H</span> hr <br>'
+    + '<span>%M</span> min <br>'
+    + '<span>%S</span> sec <br>';
+  }
+});
+
+if($('#desktop-clock').css('display') != "none")
+{
+  $('.clock').countdown(start, function(event) {
+  var $this = $(this).html(event.strftime(clock_disp));
+});
+}
+else
+{
+  $('.clock').countdown(start, function(event) {
+  var $this = $(this).html(event.strftime(clock_disp));
+});
+
+}
+
 	$('.tlt').textillate({
   // the default selector to use when detecting multiple texts to animate
   selector: '.texts',

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: class CallableGenerator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</head><body bgcolor="#f0f0f8">
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>PyRDF.CallableGenerator</strong> = <a name="PyRDF.CallableGenerator">class CallableGenerator</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Class&nbsp;that&nbsp;generates&nbsp;a&nbsp;callable<br>
+to&nbsp;parse&nbsp;a&nbsp;PyRDF&nbsp;graph.<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+head_node<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Head&nbsp;node&nbsp;of&nbsp;a&nbsp;PyRDF&nbsp;graph.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="CallableGenerator-__init__"><strong>__init__</strong></a>(self, head_node)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;`CallableGenerator`.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+head_node<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Head&nbsp;node&nbsp;of&nbsp;a&nbsp;PyRDF&nbsp;graph.</tt></dd></dl>
+
+<dl><dt><a name="CallableGenerator-get_action_nodes"><strong>get_action_nodes</strong></a>(self, node_py=None)</dt><dd><tt>Recurses&nbsp;through&nbsp;PyRDF&nbsp;graph&nbsp;and&nbsp;collects<br>
+the&nbsp;PyRDF&nbsp;nodes.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+node_py&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;current&nbsp;state's&nbsp;PyRDF&nbsp;node.&nbsp;If&nbsp;`None`,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;it&nbsp;takes&nbsp;the&nbsp;value&nbsp;of&nbsp;`self.<strong>head_node</strong>`.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;list&nbsp;of&nbsp;the&nbsp;action&nbsp;nodes&nbsp;of&nbsp;the&nbsp;graph&nbsp;in&nbsp;DFS&nbsp;order,&nbsp;which<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coincides&nbsp;with&nbsp;the&nbsp;order&nbsp;of&nbsp;execution&nbsp;in&nbsp;the&nbsp;callable&nbsp;function.</tt></dd></dl>
+
+<dl><dt><a name="CallableGenerator-get_callable"><strong>get_callable</strong></a>(self)</dt><dd><tt>Converts&nbsp;a&nbsp;given&nbsp;graph&nbsp;into<br>
+a&nbsp;callable&nbsp;and&nbsp;returns&nbsp;the&nbsp;same.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+function<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;callable&nbsp;that&nbsp;traverses&nbsp;through<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;given&nbsp;PyRDF&nbsp;graph&nbsp;and&nbsp;executes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;operations&nbsp;on&nbsp;all&nbsp;nodes.</tt></dd></dl>
+
+<dl><dt><a name="CallableGenerator-get_reducer_callable"><strong>get_reducer_callable</strong></a>(self)</dt><dd><tt>A&nbsp;method&nbsp;that&nbsp;returns&nbsp;a&nbsp;<br>
+generalized&nbsp;reducer&nbsp;function.<br>
+&nbsp;<br>
+TODO(shravan97)</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table>
+</body></html>

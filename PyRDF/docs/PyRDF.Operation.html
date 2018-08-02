@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: class Operation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</head><body bgcolor="#f0f0f8">
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>PyRDF.Operation</strong> = <a name="PyRDF.Operation">class Operation</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;Generic&nbsp;representation&nbsp;of&nbsp;an&nbsp;operation.&nbsp;The<br>
+operation&nbsp;could&nbsp;be&nbsp;a&nbsp;transformation&nbsp;or&nbsp;an&nbsp;action.<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+Types<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;class&nbsp;member&nbsp;that&nbsp;is&nbsp;an&nbsp;Enum&nbsp;of&nbsp;the&nbsp;types<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;operations&nbsp;supported.&nbsp;This&nbsp;can&nbsp;be&nbsp;ACTION<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;TRANSFORMATION.<br>
+&nbsp;<br>
+name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;current&nbsp;operation.<br>
+&nbsp;<br>
+args<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Variable&nbsp;length&nbsp;argument&nbsp;list&nbsp;for&nbsp;the&nbsp;current<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operation.<br>
+&nbsp;<br>
+kwargs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Arbitrary&nbsp;keyword&nbsp;arguments&nbsp;for&nbsp;the&nbsp;current<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operation.<br>
+&nbsp;<br>
+op_type<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;type&nbsp;or&nbsp;category&nbsp;of&nbsp;the&nbsp;current<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operation&nbsp;(ACTION&nbsp;OR&nbsp;TRANSFORMATION).<br>
+&nbsp;<br>
+&nbsp;<br>
+Supported&nbsp;operations<br>
+--------------------<br>
+&nbsp;<br>
+-&nbsp;Define<br>
+-&nbsp;Filter<br>
+-&nbsp;Histo1D<br>
+-&nbsp;Histo2D<br>
+-&nbsp;Histo3D<br>
+-&nbsp;Profile1D<br>
+-&nbsp;Profile2D<br>
+-&nbsp;Profile3D<br>
+-&nbsp;Count<br>
+-&nbsp;Min<br>
+-&nbsp;Max<br>
+-&nbsp;Mean<br>
+-&nbsp;Sum<br>
+-&nbsp;Fill<br>
+-&nbsp;Report<br>
+&nbsp;<br>
+&nbsp;<br>
+Upcoming&nbsp;(future)&nbsp;operations<br>
+----------------------------<br>
+&nbsp;<br>
+-&nbsp;Range<br>
+-&nbsp;Take<br>
+-&nbsp;Snapshot<br>
+-&nbsp;Foreach<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Operation-__init__"><strong>__init__</strong></a>(self, name, *args, **kwargs)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;`Operation`&nbsp;for&nbsp;the&nbsp;given&nbsp;name<br>
+and&nbsp;arguments.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;current&nbsp;operation<br>
+&nbsp;<br>
+*args<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Variable&nbsp;length&nbsp;argument&nbsp;list&nbsp;for&nbsp;the&nbsp;current<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operation.<br>
+&nbsp;<br>
+**kwargs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;arguments&nbsp;for&nbsp;the&nbsp;current<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operation.</tt></dd></dl>
+
+<dl><dt><a name="Operation-is_action"><strong>is_action</strong></a>(self)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;current&nbsp;operation&nbsp;is&nbsp;an&nbsp;action.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;the&nbsp;current&nbsp;operation&nbsp;is&nbsp;an&nbsp;action,&nbsp;False&nbsp;otherwise.</tt></dd></dl>
+
+<dl><dt><a name="Operation-is_transformation"><strong>is_transformation</strong></a>(self)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;current&nbsp;operation&nbsp;is&nbsp;a&nbsp;transformation.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;the&nbsp;current&nbsp;operation&nbsp;is&nbsp;a&nbsp;transformation,&nbsp;False&nbsp;otherwise.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Types</strong> = &lt;enum 'Types'&gt;<dd><tt>An&nbsp;enumeration.</tt></dl>
+
+</td></tr></table>
+</body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: class Proxy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</head><body bgcolor="#f0f0f8">
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>PyRDF.Proxy</strong> = <a name="PyRDF.Proxy">class Proxy</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;wraps&nbsp;action&nbsp;nodes&nbsp;and&nbsp;instances&nbsp;of&nbsp;Proxy&nbsp;act&nbsp;as<br>
+futures&nbsp;of&nbsp;the&nbsp;result&nbsp;produced&nbsp;by&nbsp;some&nbsp;action.&nbsp;They&nbsp;implement<br>
+a&nbsp;lazy&nbsp;synchronization&nbsp;mechanism,&nbsp;i.e.,&nbsp;when&nbsp;they&nbsp;are&nbsp;accessed<br>
+for&nbsp;the&nbsp;first&nbsp;time,&nbsp;they&nbsp;trigger&nbsp;the&nbsp;execution&nbsp;of&nbsp;the&nbsp;whole<br>
+RDataFrame&nbsp;graph.<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+backend<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;class&nbsp;member&nbsp;to&nbsp;store&nbsp;a&nbsp;backend&nbsp;object<br>
+&nbsp;&nbsp;&nbsp;&nbsp;based&nbsp;on&nbsp;the&nbsp;configuration&nbsp;set&nbsp;by&nbsp;the&nbsp;user.<br>
+&nbsp;<br>
+action_node<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;action&nbsp;node&nbsp;that&nbsp;the&nbsp;current&nbsp;Proxy<br>
+&nbsp;&nbsp;&nbsp;&nbsp;instance&nbsp;wraps.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Proxy-__getattr__"><strong>__getattr__</strong></a>(self, attr)</dt><dd><tt>Intercepts&nbsp;calls&nbsp;on&nbsp;the&nbsp;result&nbsp;of<br>
+the&nbsp;action&nbsp;node.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+function<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;method&nbsp;to&nbsp;handle&nbsp;an&nbsp;operation&nbsp;call&nbsp;to&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;current&nbsp;action&nbsp;node.</tt></dd></dl>
+
+<dl><dt><a name="Proxy-__init__"><strong>__init__</strong></a>(self, action_node)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;`Proxy`&nbsp;object&nbsp;for&nbsp;a<br>
+given&nbsp;action&nbsp;node.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+action_node&nbsp;:&nbsp;PyRDF.Node<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;action&nbsp;node&nbsp;that&nbsp;the&nbsp;current&nbsp;Proxy<br>
+&nbsp;&nbsp;&nbsp;&nbsp;should&nbsp;wrap.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table>
+</body></html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head><title>Python: class Operation</title>
+<html><head><title>Python: module PyRDF.Operation</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -8,11 +8,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
 </head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="PyRDF.html"><font color="#ffffff">PyRDF</font></a>.Operation</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/usr/local/lib/python3.6/site-packages/PyRDF-0.0.1-py3.6.egg/PyRDF/Operation.py">/usr/local/lib/python3.6/site-packages/PyRDF-0.0.1-py3.6.egg/PyRDF/Operation.py</a></font></td></tr></table>
+    <p></p>
 <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="PyRDF.Operation.html#Operation">Operation</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><strong>PyRDF.Operation</strong> = <a name="PyRDF.Operation">class Operation</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="Operation">class <strong>Operation</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
 <td colspan=2><tt>A&nbsp;Generic&nbsp;representation&nbsp;of&nbsp;an&nbsp;operation.&nbsp;The<br>
@@ -23,7 +46,7 @@ Attributes<br>
 Types<br>
 &nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;class&nbsp;member&nbsp;that&nbsp;is&nbsp;an&nbsp;Enum&nbsp;of&nbsp;the&nbsp;types<br>
 &nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;operations&nbsp;supported.&nbsp;This&nbsp;can&nbsp;be&nbsp;ACTION<br>
-&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;TRANSFORMATION.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;TRANSFORMATION&nbsp;or&nbsp;INSTANT_ACTION.<br>
 &nbsp;<br>
 name<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;current&nbsp;operation.<br>
@@ -38,39 +61,18 @@ kwargs<br>
 &nbsp;<br>
 op_type<br>
 &nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;type&nbsp;or&nbsp;category&nbsp;of&nbsp;the&nbsp;current<br>
-&nbsp;&nbsp;&nbsp;&nbsp;operation&nbsp;(ACTION&nbsp;OR&nbsp;TRANSFORMATION).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operation&nbsp;(ACTION&nbsp;OR&nbsp;TRANSFORMATION&nbsp;OR&nbsp;INSTANT_ACTION).<br>
 &nbsp;<br>
+For&nbsp;the&nbsp;list&nbsp;of&nbsp;operations&nbsp;that&nbsp;your&nbsp;current<br>
+backend&nbsp;supports,&nbsp;try&nbsp;:<br>
 &nbsp;<br>
-Supported&nbsp;operations<br>
---------------------<br>
+import&nbsp;PyRDF<br>
+PyRDF.use(...)&nbsp;#&nbsp;Choose&nbsp;a&nbsp;backend<br>
 &nbsp;<br>
--&nbsp;Define<br>
--&nbsp;Filter<br>
--&nbsp;Histo1D<br>
--&nbsp;Histo2D<br>
--&nbsp;Histo3D<br>
--&nbsp;Profile1D<br>
--&nbsp;Profile2D<br>
--&nbsp;Profile3D<br>
--&nbsp;Count<br>
--&nbsp;Min<br>
--&nbsp;Max<br>
--&nbsp;Mean<br>
--&nbsp;Sum<br>
--&nbsp;Fill<br>
--&nbsp;Report<br>
-&nbsp;<br>
-&nbsp;<br>
-Upcoming&nbsp;(future)&nbsp;operations<br>
-----------------------------<br>
-&nbsp;<br>
--&nbsp;Range<br>
--&nbsp;Take<br>
--&nbsp;Snapshot<br>
--&nbsp;Foreach<br>&nbsp;</tt></td></tr>
+print(PyRDF.current_backend.supported_operations)<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="Operation-__init__"><strong>__init__</strong></a>(self, name, *args, **kwargs)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;`Operation`&nbsp;for&nbsp;the&nbsp;given&nbsp;name<br>
+<dl><dt><a name="Operation-__init__"><strong>__init__</strong></a>(self, name, *args, **kwargs)</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;`<a href="#Operation">Operation</a>`&nbsp;for&nbsp;the&nbsp;given&nbsp;name<br>
 and&nbsp;arguments.<br>
 &nbsp;<br>
 Parameters<br>
@@ -112,5 +114,12 @@ Data descriptors defined here:<br>
 Data and other attributes defined here:<br>
 <dl><dt><strong>Types</strong> = &lt;enum 'Types'&gt;<dd><tt>An&nbsp;enumeration.</tt></dl>
 
-</td></tr></table>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>print_function</strong> = _Feature((2, 6, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0), 65536)</td></tr></table>
 </body></html>

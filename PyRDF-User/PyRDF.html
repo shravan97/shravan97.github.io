@@ -13,8 +13,7 @@
 <tr bgcolor="#7799ee">
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>PyRDF</strong></big></big></font></td
-><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/usr/local/lib/python3.6/site-packages/PyRDF-0.0.1-py3.6.egg/PyRDF/__init__.py">/usr/local/lib/python3.6/site-packages/PyRDF-0.0.1-py3.6.egg/PyRDF/__init__.py</a></font></td></tr></table>
+></tr></table>
     <p></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
@@ -36,7 +35,25 @@
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><dl><dt><a name="-use"><strong>use</strong></a>(backend_name, conf={})</dt></dl>
+<td width="100%"><dl><dt><a name="-include"><strong>include</strong></a>(includes_list)</dt><dd><tt>Includes&nbsp;a&nbsp;list&nbsp;of&nbsp;C++&nbsp;headers&nbsp;to&nbsp;be<br>
+declared&nbsp;before&nbsp;execution.<br>
+&nbsp;<br>
+parameters<br>
+----------<br>
+includes_list&nbsp;:&nbsp;list&nbsp;or&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;list&nbsp;should&nbsp;consist&nbsp;of&nbsp;all&nbsp;necessary&nbsp;C++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;headers&nbsp;as&nbsp;strings.</tt></dd></dl>
+ <dl><dt><a name="-use"><strong>use</strong></a>(backend_name, conf={})</dt><dd><tt>Allows&nbsp;the&nbsp;user&nbsp;to&nbsp;choose&nbsp;the&nbsp;execution&nbsp;backend.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+backend_name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;chosen&nbsp;backend.<br>
+&nbsp;<br>
+conf&nbsp;(optional)&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;should&nbsp;be&nbsp;a&nbsp;dictionary&nbsp;with&nbsp;necessary<br>
+&nbsp;&nbsp;&nbsp;&nbsp;configuration&nbsp;parameters.&nbsp;Its&nbsp;default&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;an&nbsp;empty&nbsp;dictionary&nbsp;{}.</tt></dd></dl>
 </td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#55aa55">
@@ -44,5 +61,6 @@
 <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
     
 <tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>current_backend</strong> = &lt;PyRDF.backend.Local.Local object&gt;</td></tr></table>
+<td width="100%"><strong>current_backend</strong> = &lt;PyRDF.backend.Local.Local object&gt;<br>
+<strong>includes</strong> = []</td></tr></table>
 </body></html>

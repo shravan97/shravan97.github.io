@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: class Local</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</head><body bgcolor="#f0f0f8">
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>PyRDF.backend.Local</strong> = <a name="PyRDF.backend.Local">class Local</a>(<a href="PyRDF.backend.Backend.html#Backend">PyRDF.backend.Backend.Backend</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Backend&nbsp;that&nbsp;relies&nbsp;on&nbsp;the&nbsp;C++&nbsp;implementation<br>
+of&nbsp;RDataFrame&nbsp;to&nbsp;locally&nbsp;execute&nbsp;the&nbsp;current&nbsp;graph.<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+config<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;config&nbsp;object&nbsp;for&nbsp;the&nbsp;Local<br>
+&nbsp;&nbsp;&nbsp;&nbsp;backend.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="PyRDF.backend.Local.html#Local">Local</a></dd>
+<dd><a href="PyRDF.backend.Backend.html#Backend">PyRDF.backend.Backend.Backend</a></dd>
+<dd>abc.ABC</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Local-__init__"><strong>__init__</strong></a>(self, config={})</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;instance&nbsp;of&nbsp;the<br>
+Local&nbsp;implementation&nbsp;of&nbsp;`Backend`.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+config&nbsp;(optional)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;config&nbsp;object&nbsp;for&nbsp;the&nbsp;required<br>
+&nbsp;&nbsp;&nbsp;&nbsp;backend.&nbsp;The&nbsp;default&nbsp;value&nbsp;is&nbsp;an<br>
+&nbsp;&nbsp;&nbsp;&nbsp;empty&nbsp;Python&nbsp;dictionary&nbsp;`{}`.</tt></dd></dl>
+
+<dl><dt><a name="Local-execute"><strong>execute</strong></a>(self, generator)</dt><dd><tt>Executes&nbsp;locally&nbsp;the&nbsp;current&nbsp;RDataFrame&nbsp;graph.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+generator&nbsp;:&nbsp;PyRDF.CallableGenerator<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;instance&nbsp;of&nbsp;type&nbsp;`CallableGenerator`&nbsp;that&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;responsible&nbsp;for&nbsp;generating&nbsp;the&nbsp;callable&nbsp;function.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Methods inherited from <a href="PyRDF.backend.Backend.html#Backend">PyRDF.backend.Backend.Backend</a>:<br>
+<dl><dt><a name="Local-check_supported"><strong>check_supported</strong></a>(self, operation_name)</dt><dd><tt>Checks&nbsp;if&nbsp;a&nbsp;given&nbsp;operation&nbsp;is&nbsp;supported<br>
+by&nbsp;the&nbsp;given&nbsp;backend.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+operation_name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;of&nbsp;the&nbsp;operation&nbsp;to&nbsp;be&nbsp;checked.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+Exception<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;happens&nbsp;when&nbsp;`operation_name`&nbsp;doesn't<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exist&nbsp;in&nbsp;`supported_operations`&nbsp;instance&nbsp;member.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PyRDF.backend.Backend.html#Backend">PyRDF.backend.Backend.Backend</a>:<br>
+<dl><dt><strong>supported_operations</strong> = ['Define', 'Filter', 'Histo1D', 'Histo2D', 'Histo3D', 'Profile1D', 'Profile2D', 'Profile3D', 'Count', 'Min', 'Max', 'Mean', 'Sum', 'Fill', 'Report', 'Range', 'Take', 'Snapshot', 'Foreach', 'Reduce', ...]</dl>
+
+<hr>
+Data descriptors inherited from abc.ABC:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table>
+</body></html>
